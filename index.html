@@ -10,27 +10,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body style="font-family: 'Noto Serif', serif;">
-    <!-- Navbar & Banner -->
-  <header class="bg-[#f9fbfc] px-6 py-4">
+<header class="bg-[#f9fbfc] px-6 py-6">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <div class="flex items-center space-x-2">
-        <img src="Images/logo.png" alt="Faugei" class="w-8 h-8">
-        <span class="text-xl font-semibold">Faugei</span>
-      </div>
-      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-700">
-        <a href="#" class="font-bold text-black">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">About us</a>
-        <div class="flex items-center space-x-1">
-          <img src="Images/trolley.png" alt="Cart" class="w-5 h-5">
-          <span>Cart ($56)</span>
-        </div>
-      </nav>
-      <div class="flex md: hidden items-center space-x-1">
-        <img src="images/trolley.png" alt="Cart" class="w-5 h-5">
-        <span>Cart</span>
-      </div>
+    
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <img src="Images/logo.png" alt="Faugei" class="w-8 h-8">
+      <span class="text-xl font-semibold">Faugei</span>
     </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-700">
+      <a href="#" class="font-bold text-black">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About us</a>
+      <!-- Cart for Desktop -->
+      <div class="flex items-center space-x-1">
+        <img src="Images/trolley.png" alt="Cart" class="w-5 h-5">
+        <span>Cart ($56)</span>
+      </div>
+    </nav>
+
+    <!-- Cart for Mobile (only visible on small screens) -->
+    <div class="flex md:hidden items-center space-x-1">
+      <img src="Images/trolley.png" alt="Cart" class="w-5 h-5">
+      <span class="text-sm font-medium text-gray-700">Cart</span>
+    </div>
+
+  </div>
      <!-- Banner -->
     <section class="bg-[#f9fbfc] px-6 py-12">
       <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-6">
@@ -49,7 +56,7 @@
         </div>
       </div>
     </section>
-    </header>
+</header>
 
     <main>
         <!-- Our Plants Section -->
